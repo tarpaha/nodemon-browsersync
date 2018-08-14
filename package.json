@@ -1,0 +1,22 @@
+{
+    "name": "nodemon-browsersync",
+    "version": "1.0.0",
+    "description": "simple app that restarts server and reloads browser when files changed",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tarpaha/nodemon-browsersync.git"
+    },
+    "author": "tarpaha",
+    "license": "ISC",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "dependencies": {
+        "express": "^4.16.3"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.24.6",
+        "nodemon": "^1.18.3"
+    }
+}
