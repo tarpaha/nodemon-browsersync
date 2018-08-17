@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile('index.html');
 });
 
-function staticResourcesSync() {
+function startBrowserSync() {
     const browserSync = require('browser-sync');
     browserSync({
         files: ['public/**/*'],
@@ -24,6 +24,6 @@ function staticResourcesSync() {
 app.listen(port, function () {
     console.log(`Example app listening on port ${port}!`);
     if(!isProduction) {
-        staticResourcesSync();
+        startBrowserSync();
     }
 });
