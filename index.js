@@ -15,7 +15,7 @@ function staticResourcesSync() {
         files: ['public/**/*'],
         online: false,
         open: false,
-        port: port,
+        port: port + 1,
         proxy: 'localhost:' + port,
         ui: false
     });
